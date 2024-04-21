@@ -109,6 +109,5 @@ if __name__=="__main__":
 
     args = parser.parse_args()
     
-    print(args)
     gatherer=RedditLinkGatherer(args.subreddit,args.year,args.delay,requery=args.requery,startMonth=args.month)
     gatherer.gatherLinks()
