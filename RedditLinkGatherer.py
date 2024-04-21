@@ -69,7 +69,7 @@ class RedditLinkGatherer():
             self.insertDateToDB(year,month,day)
         return search(f'site:{self.redditLink} before:{year}/{month}/{day}', 
                       pause=self.queryDelay,
-                      safe='on'
+                      num=1000,
                       )
       
     
